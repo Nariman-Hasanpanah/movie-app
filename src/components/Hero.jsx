@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router";
 import { useState } from "react";
+import Navbar from "./Navbar";
 import HeroBackground from "../assets/hero-background.jpg";
 
 const Hero = () => {
@@ -9,10 +10,11 @@ const Hero = () => {
     <>
       <div
         id="header"
-        className="relative h-125 md:h-135 lg:h-150 pt-5 bg-hero-pattern bg-cover bg-center"
+        className="relative h-125 md:h-135 lg:h-150 bg-hero-pattern bg-cover bg-center"
         style={{ backgroundImage: `url(${HeroBackground})` }}
       >
         <div id="black-overlay" className="absolute inset-0 bg-black/60"></div>
+        <Navbar />
         <div
           id="title"
           className="relative z-10 flex flex-col justify-center items-center mt-8 pt-15 md:pt-18 lg:pt-24"
@@ -22,12 +24,12 @@ const Hero = () => {
             className="flex flex-col text-center text-white text-2xl mx-2 gap-4 md:text-4xl lg:text-5xl"
           >
             <p className="font-bold">
-              <span className="text-yellow-400">Cinematic </span>Pleasure
+              <span className="text-red-600">Cinematic </span>Pleasure
               Awaits:
             </p>
             <p className="font-bold">
               Stream the Magic, Feel the{" "}
-              <span className="text-yellow-400">Story</span>.
+              <span className="text-red-600">Story</span>.
             </p>
             <p className="text-white text-sm mt-4">
               Welcome to your streaming escape!
