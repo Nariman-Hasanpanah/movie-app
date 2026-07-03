@@ -4,12 +4,15 @@ import { BrowserRouter } from "react-router";
 import "./index.css";
 import App from "./App.jsx";
 import { PopularMediaProvider } from "./context/PopularMediaProvider.jsx";
+import { MediaProvider } from "./context/MediaProvider.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <PopularMediaProvider>
-        <App />
+        <MediaProvider>
+          <App />
+        </MediaProvider>
       </PopularMediaProvider>
     </BrowserRouter>
   </StrictMode>,
