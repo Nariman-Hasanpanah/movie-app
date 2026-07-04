@@ -9,7 +9,7 @@ const MovieCard = ({ movies }) => {
         >
           <img
             src={`https://image.tmdb.org/t/p/w500/${movies.poster_path}`}
-            className="rounded-3xl"
+            className="w-full aspect-2/3 object-cover rounded-3xl"
             alt=""
           />
         </div>
