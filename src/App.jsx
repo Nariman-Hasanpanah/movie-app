@@ -5,6 +5,7 @@ import PopSerieCardInfo from "./pages/PopSerieCardInfo";
 import Movies from "./pages/Movies";
 import TVSeries from "./pages/TVSeries";
 import Search from "./pages/Search";
+import SignIn from "./pages/forms/SignIn";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/movies" element={<Movies />} />
         <Route path="/tvseries" element={<TVSeries />} />
         <Route path="/search/:query" element={<Search />} />
+        <Route path="/signin" element={<SignIn />} />
       </Routes>
     </>
   );
