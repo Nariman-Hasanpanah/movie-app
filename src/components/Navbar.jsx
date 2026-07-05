@@ -8,10 +8,19 @@ const Navbar = () => {
         className="relative z-10 pb-3 bg-gray-300 lg:pb-5 flex justify-center items-center text-white pt-5"
       >
         <div className="flex justify-center items-center overflow-hidden gap-10 sm:gap-30 md:gap-50 lg:gap-110">
-          <div id="logo" className="mx-2 ">
+          <div
+            id="logo"
+            className="flex flex-col gap-4 mx-2 md:flex-row md:gap-10 lg:gap-15"
+          >
+            <Link
+              to="/signin"
+              className="flex justify-center text-sm font-bold text-blue-600 hover:opacity-60 md:text-lg md:items-center"
+            >
+              Sign In
+            </Link>
             <Link
               to="/"
-              className="text-md font-bold hover:opacity-80 text-red-600 bg-black rounded-4xl px-2 py-1 sm:text-3xl lg:text-4xl"
+              className="text-md font-bold hover:opacity-80 text-red-600 bg-white rounded-3xl px-2 py-1 sm:text-3xl lg:text-4xl"
             >
               NHP-MOVIE
             </Link>
