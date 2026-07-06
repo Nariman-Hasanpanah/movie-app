@@ -21,7 +21,7 @@ const SignIn = () => {
   });
 
   return (
-    <div id="sign-in-page" className="h-screen p-25 bg-white">
+    <div id="sign-in-page" className="h-screen pt-25 bg-white">
       <div
         id="sign-in-form"
         className="inter h-auto flex flex-col justify-center items-center p-6 sm:p-10 sm:px-15 border border-gray-300 bg-white rounded-xl w-fit mx-auto"

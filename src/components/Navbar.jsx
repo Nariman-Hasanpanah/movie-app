@@ -5,7 +5,7 @@ const Navbar = () => {
     <>
       <div
         id="navbar"
-        className="relative z-10 pb-3 bg-gray-300 lg:pb-5 flex justify-center items-center text-white pt-5"
+        className="relative z-10 pb-3 bg-transparent bg-gray-300 lg:pb-5 flex justify-center items-center text-white pt-5"
       >
         <div className="flex justify-center items-center overflow-hidden gap-10 sm:gap-30 md:gap-50 lg:gap-110">
           <div
