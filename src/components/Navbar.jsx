@@ -1,6 +1,11 @@
 import { Link } from "react-router";
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
+import { MdLightMode, MdDarkMode, MdBrightness1 } from "react-icons/md";
 
 const Navbar = () => {
+  const { darkMode, toggleTheme } = useContext(ThemeContext);
+
   return (
     <>
       <div
@@ -35,6 +40,18 @@ const Navbar = () => {
             <Link to="/tvseries" className=" hover:opacity-60">
               TV Series
             </Link>
+            <div
+              id="toggle-theme"
+              onClick={toggleTheme}
+              className={`relative flex flex-col items-center rounded-full border-2 text-xl gap-3 p-0.5 md:p-1 ${darkMode ? "bg-black border-yellow-400" : "bg-gray-100 border-red-600"} md:flex-row cursor-pointer`}
+            >
+              <MdLightMode className="text-yellow-400 text-xl md:text-2xl"></MdLightMode>
+              <MdDarkMode className="text-yellow-400 text-xl md:text-2xl"></MdDarkMode>
+              <MdBrightness1
+                id="toggle-ball"
+                className={`absolute text-2xl md:text-3xl ${darkMode ? "top-0 md:top-[1px] left-0 text-white" : "bottom-0 md:bottom-[1px] right-0 text-black"}`}
+              ></MdBrightness1>
+            </div>
           </div>
         </div>
       </div>
