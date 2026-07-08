@@ -13,3 +13,12 @@ html {
 .inter {
   font-family: "Inter", sans-serif;
 }
+
+@custom-variant dark (&:where(.dark ,.dark *) );
+
+* {
+  transition:
+    background-color 1s ease-in-out,
+    color 0.5s ease,
+    border-color 1s ease;
+}

@@ -6,10 +6,10 @@ const PopularMovies = () => {
   const { movies } = useContext(PopularMediaContext);
   return (
     <>
-      <div id="popular-movies" className="bg-white">
+      <div id="popular-movies" className="bg-white dark:bg-black">
         <div
           id="popular-movies-title"
-          className="py-10 text-red-600 text-center pb-10 text-3xl md:text-4xl lg:text-5xl font-bold"
+          className="py-10 text-red-600 dark:text-yellow-400 text-center pb-10 text-3xl md:text-4xl lg:text-5xl font-bold"
         >
           Popular Movies
         </div>

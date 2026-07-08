@@ -10,10 +10,13 @@ const Hero = () => {
     <>
       <div
         id="header"
-        className="relative h-125 md:h-135 lg:h-150 bg-hero-pattern bg-cover bg-center"
+        className="relative h-120 md:h-135 lg:h-150 bg-hero-pattern bg-cover bg-center"
         style={{ backgroundImage: `url(${HeroBackground})` }}
       >
-        <div id="black-overlay" className="absolute inset-0 bg-black/60"></div>
+        <div
+          id="black-overlay"
+          className="absolute inset-0 bg-black/40 dark:bg-black/60"
+        ></div>
         <Navbar />
         <div
           id="title"
@@ -24,12 +27,14 @@ const Hero = () => {
             className="flex flex-col text-center text-white text-2xl mx-2 gap-4 md:text-4xl lg:text-5xl"
           >
             <p className="font-bold">
-              <span className="text-red-600">Cinematic </span>Pleasure
-              Awaits:
+              <span className="text-red-600 dark:text-yellow-400">
+                Cinematic{" "}
+              </span>
+              Pleasure Awaits:
             </p>
             <p className="font-bold">
               Stream the Magic, Feel the{" "}
-              <span className="text-red-600">Story</span>.
+              <span className="text-red-600 dark:text-yellow-400">Story</span>.
             </p>
             <p className="text-white text-sm mt-4">
               Welcome to your streaming escape!
@@ -42,7 +47,7 @@ const Hero = () => {
             <input
               type="text"
               placeholder="Search......"
-              className=" overflow-hidden w-75 h-9 md:w-100 lg:w-125 border md:h-12 lg:h-12 px-4 py-2 outline-none rounded-lg md:rounded-r-none md:rounded-l-lg lg:rounded-r-none lg:rounded-l-lg bg-gray-100"
+              className=" overflow-hidden w-75 h-9 md:w-100 lg:w-125 md:h-12 lg:h-12 px-4 py-2 outline-none rounded-lg md:rounded-r-none md:rounded-l-lg lg:rounded-r-none lg:rounded-l-lg text-black dark:text-white bg-gray-100 dark:bg-gray-700"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               onKeyDown={(e) => {
