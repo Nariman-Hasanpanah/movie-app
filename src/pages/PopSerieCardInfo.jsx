@@ -52,7 +52,7 @@ function PopSerieCardInfo() {
     <div className="bg-gray-300 dark:bg-gray-800">
       <Navbar />
       <PopSerieInfoPage key={serieInfo.id} info={serieInfo} />
-      <div className=" text-red-500 bg-white text-center py-5 text-2xl md:text-3xl lg:text-4xl font-bold">
+      <div className=" text-red-500 dark:text-yellow-400 bg-white dark:bg-black text-center py-5 text-2xl md:text-3xl lg:text-4xl font-bold">
         Official Trailer
       </div>
       <MediaTrailer trailerKey={trailerKey} />

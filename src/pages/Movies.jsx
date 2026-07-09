@@ -15,10 +15,10 @@ const Movies = () => {
 
   return (
     <>
-      <div className="bg-gray-300">
+      <div className="bg-gray-300 dark:bg-black">
         <Navbar />
-        <div className="bg-white pb-10">
-          <p className="py-10 text-red-600 text-center pb-10 text-3xl md:text-4xl lg:text-5xl font-bold">
+        <div className="bg-white dark:bg-black pb-10">
+          <p className="py-10 text-red-600 dark:text-yellow-400 text-center pb-10 text-3xl md:text-4xl lg:text-5xl font-bold">
             Now Playing
           </p>
           <div className="grid grid-cols-2 gap-5 px-3 justify-center sm:grid-cols-3 sm:px-5 md:px-8 md:grid-cols-4 md:pb-5 lg:grid-cols-6 lg:px-28">

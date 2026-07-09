@@ -6,7 +6,7 @@ function PopSerieInfoPage({ info }) {
   return (
     <div
       key={info.id}
-      className="flex flex-col px-5 justify-center gap-5 md:gap-10 items-center bg-white text-white md:flex-row md:py-10 lg:pt-20 lg:pb-10"
+      className="flex flex-col px-5 justify-center gap-5 md:gap-10 items-center bg-white dark:bg-black text-black dark:text-white md:flex-row md:py-10 lg:pt-20 lg:pb-10"
     >
       <div className="flex justify-center items-center px-5 pt-9 lg:pt-0">
         <img
@@ -17,8 +17,8 @@ function PopSerieInfoPage({ info }) {
           alt=""
         />
       </div>
-      <div className="rounded-2xl py-5 mb-5 bg-gray-200">
-        <div className="flex flex-col justify-center items-center mt-2 text-black">
+      <div className="rounded-2xl py-5 mb-5 bg-gray-200 dark:bg-gray-800">
+        <div className="flex flex-col justify-center items-center mt-2">
           <p className="mb-5 text-xl font-bold text-left md:text-3xl lg:w-125 lg:text-4xl">
             {info.title}
             {info.original_name}
@@ -28,7 +28,7 @@ function PopSerieInfoPage({ info }) {
             {info.genres.map((genre) => (
               <div
                 key={genre.id}
-                className=" rounded-lg flex justify-center font-bold text-red-600"
+                className=" rounded-lg flex justify-center font-bold text-red-600 dark:text-yellow-400"
               >
                 <p className="text-xs">{genre.name} </p>
               </div>
@@ -39,7 +39,7 @@ function PopSerieInfoPage({ info }) {
           </p>
         </div>
 
-        <div className="mx-4 flex gap-2 font-bold text-red-600 py-4 ml-7">
+        <div className="mx-4 flex gap-2 font-bold text-red-600 dark:text-yellow-400 py-4 ml-7">
           <p className="border rounded px-2 text-xs lg:text-md">
             {`IMDB : ${info.vote_average}`}
           </p>
