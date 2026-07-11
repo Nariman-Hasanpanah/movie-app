@@ -1,16 +1,119 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🎬 Movie App
 
-Currently, two official plugins are available:
+A modern React-based movie discovery app powered by the TMDB API  
+Browse trending movies, TV series, and watch official trailers in a beautiful UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+<img src="./src/assets/banner.png" alt="Movie App Banner" />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+</div>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚡ Tech Stack
+
+- ⚛️ React (Vite)
+- 🎨 Tailwind CSS
+- 🔀 React Router
+- 📡 Axios
+- 🧠 Context API
+- 🎬 TMDB API
+
+---
+
+## ✨ Features
+
+- 🔥 Trending Movies & TV Series
+- 🔍 Search functionality for movies & series
+- 🎞️ Watch official trailers (YouTube embed)
+- 📄 Detailed movie & series pages
+- 📱 Fully responsive design (mobile-first)
+- ⚡ Fast performance with Vite
+- 🧭 Clean routing with React Router
+
+---
+
+## 📸 Preview
+
+<div align="center">
+
+### Home Page Light Mode
+
+<img src="./src/assets/home-page.png" width="80%" />
+
+### Home Page Dark Mode
+
+<img src="./src/assets/home-dark.png" width="80%" />
+
+### Details Page
+
+<img src="./src/assets/details.png" width="80%" />
+
+### Search Page
+
+<img src="./src/assets/search.png" width="80%" />
+
+</div>
+
+---
+
+## 🚀 Live Demo
+
+👉 [View Live Project](https://nhp-movie-app.netlify.app/)
+
+---
+
+## ⚙️ Installation
+
+git clone https://github.com/Nariman-Hasanpanah/movie-app.git
+cd movie-app
+npm install
+npm run dev
+
+---
+
+## 🔑 Environment Variables
+
+Create a .env file in root:
+
+## VITE_TMDB_API_KEY=your_api_key_here
+
+## 📁 Folder Structure
+
+src/
+├── components/
+├── pages/
+├── context/
+├── assets/
+├── App.jsx
+└── main.jsx
+
+---
+
+## 📚 What I Learned
+
+- Working with REST APIs
+- Managing global state using Context API
+- Building reusable components
+- React Router navigation
+- Handling async data fetching
+- UI responsiveness with Tailwind
+- Real-world project structuring
+
+---
+
+## 👨‍💻 Author
+
+Nariman Hasanpanah
+
+- GitHub: https://github.com/Nariman-Hasanpanah
+- LinkedIn: https://www.linkedin.com/in/nariman-hasan-panah-7b1897308
+
+---
+
+## ⭐ Support
+
+If you like this project, don't forget to give it a ⭐ on GitHub, thank you!
