@@ -3,7 +3,7 @@
 # 🎬 Movie App
 
 A modern React-based movie discovery app powered by the TMDB API  
-Browse trending movies, TV series, and watch official trailers in a beautiful UI.
+Browse trending movies, TV series, and watch official trailers in a beautiful UI.(Athentication backend integration not included)
 
 ---
 
@@ -21,6 +21,7 @@ Browse trending movies, TV series, and watch official trailers in a beautiful UI
 - 📡 Axios
 - 🧠 Context API
 - 🎬 TMDB API
+- 📄 Formik & Yup
 
 ---
 
@@ -30,9 +31,11 @@ Browse trending movies, TV series, and watch official trailers in a beautiful UI
 - 🔍 Search functionality for movies & series
 - 🎞️ Watch official trailers (YouTube embed)
 - 📄 Detailed movie & series pages
+- ®️ Sign in & Sign up form
 - 📱 Fully responsive design (mobile-first)
 - ⚡ Fast performance with Vite
 - 🧭 Clean routing with React Router
+- 🌑 Dark theme with smooth transition
 
 ---
 
@@ -40,19 +43,19 @@ Browse trending movies, TV series, and watch official trailers in a beautiful UI
 
 <div align="center">
 
-### Home Page Light Mode
+## Home Page Light Mode
 
 <img src="./src/assets/home-page.png" width="80%" />
 
-### Home Page Dark Mode
+## Home Page Dark Mode
 
 <img src="./src/assets/home-dark.png" width="80%" />
 
-### Details Page
+## Details Page
 
 <img src="./src/assets/details.png" width="80%" />
 
-### Search Page
+## Search Page
 
 <img src="./src/assets/search.png" width="80%" />
 
@@ -62,7 +65,9 @@ Browse trending movies, TV series, and watch official trailers in a beautiful UI
 
 ## 🚀 Live Demo
 
-👉 [View Live Project](https://nhp-movie-app.netlify.app/)
+*نکته مهم برای اجرای دمو : این پروژه از TMDB API و Cloudflare Pages استفاده میکنه که ممکنه از داخل ایران بدون VPN در دسترس نباشند.پس برای مشاهده صحیح پروژه(چه آنلاین و چه لوکال) لطفا حتما VPN خود را روشن نگه دارید.
+
+### 👉 [View Live Project](https://movie-app-7r5.pages.dev/)
 
 ---
 
@@ -79,23 +84,14 @@ npm run dev
 
 Create a .env file in root:
 
-## VITE_TMDB_API_KEY=your_api_key_here
-
-## 📁 Folder Structure
-
-src/
-├── components/
-├── pages/
-├── context/
-├── assets/
-├── App.jsx
-└── main.jsx
+### VITE_TMDB_AUTH_TOKEN=your_auth_token_here
 
 ---
 
 ## 📚 What I Learned
 
 - Working with REST APIs
+- Working with Formik and Yup(Validation)
 - Managing global state using Context API
 - Building reusable components
 - React Router navigation
